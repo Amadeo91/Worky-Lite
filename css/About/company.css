@@ -1,0 +1,253 @@
+.company {
+    height: 100%;
+    width: 100%;
+
+}
+
+.company__about {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px auto 0;
+    height: 100%;
+    width: 60%;
+    z-index: 1;
+}
+
+.company__containerLeft {
+    width: 33%;
+    text-transform: uppercase;
+}
+
+.company__title {
+    position: relative;
+    margin-top: 15px;
+    font-size: 42px;
+}
+
+.company__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 20%;
+    height: 5px;
+    background-color: orange;
+}
+
+.company__containerRight {
+    width: 50%;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.company__text--light {
+    font-weight: 300;
+}
+
+.background {
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+.background__left {
+    margin-top: 100px;
+    width: 68%;
+    height: 100%;
+    padding: 120px 27% 130px 15%;
+    color: white;
+    text-transform: uppercase;
+    background-color: black;
+}
+
+.left__paragraph {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.left__title {
+    position: relative;
+    margin-bottom: 100px;
+    font-size: 34px;
+}
+
+.left__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 15%;
+    height: 5px;
+    background-color: orange;
+}
+
+.left__descriptionBtn {
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 100%;
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.description__plus {
+    font-size: 2.3em;
+    width: 15%;
+}
+
+.description__paragraph {
+    width: 80%;
+}
+
+.description__containerList {
+    display: none;
+}
+
+.description__list {
+    margin: 40px 0 50px;
+    font-size: .7em;
+    line-height: 15px;
+    letter-spacing: 3px;
+}
+
+.description__containerList--js {
+    display: block;
+}
+
+.description__item {
+    margin-left: 30px;
+}
+
+.description__item--top {
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.background__right--box {
+    position: absolute;
+    top: 250px;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    color: white;
+    padding: 350px 140px 0 100px;
+    background-color: rgba(168, 115, 55, 0.733);
+}
+
+.background__right {
+    display: flex;
+    position: absolute;
+    top: 250px;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url(/img/four.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right__paragraph {
+    margin-top: -250px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+}
+
+.right__title {
+    position: relative;
+    padding-right: 350px;
+    margin-bottom: 70px;
+    font-size: 35px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.right__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 10%;
+    height: 5px;
+    background-color: white;
+}
+
+.right__text {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 300px;
+    margin-top: 120px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.right__numbers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 130px;
+    font-size: 16px;
+}
+
+.right__numbers--bold {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.right__text--bold {
+
+    font-weight: bold;
+}
+
+@media (max-width: 1529px) {
+    .right__text {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 1195px) {}
+
+.company__img {
+    width: 450px;
+}
+
+@media (max-width: 685px) {
+    .company__img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .company__about {
+        flex-wrap: wrap;
+        width: 85%;
+    }
+
+    .company__containerLeft {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .company__containerRight {
+        width: 100%;
+    }
+
+    .background {
+        display: none;
+    }
+}

@@ -1,0 +1,113 @@
+.backgrounds {
+    display: flex;
+    margin-top: 150px;
+    height: 100%;
+    width: 100%;
+}
+
+.backgrounds__left {
+    width: 58%;
+    height: 100%;
+    margin-bottom: 100px;
+    padding: 120px 180px 30px 250px;
+    color: white;
+    background-color: black;
+}
+
+.left__paragraph {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.left__title {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.left__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 15%;
+    height: 5px;
+    background-color: orange;
+}
+
+.left__text {
+    margin-top: 80px;
+    margin-bottom: 150px;
+    font-weight: lighter;
+    line-height: 35px;
+}
+
+.backgrounds__right {
+    margin-top: 75px;
+    width: 50%;
+    height: 500px;
+    color: white;
+    padding: 100px 120px 0 140px;
+    text-transform: uppercase;
+    background-color: rgba(247, 148, 0, 0.85);
+}
+
+.right__paragraph {
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.right__title {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+
+.right__text {
+    font-size: .9em;
+    margin-bottom: 80px;
+}
+
+.right__input {
+    width: 90%;
+    padding: 10px 0 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.right__btn {
+    margin-top: 10px;
+    padding: 7px 10px;
+    width: 70px;
+    border: none;
+    border-radius: 5px;
+    font-size: .7em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.right__btn:hover {
+    color: black;
+    background-color: white;
+}
+
+@media (max-width: 1400px) {
+    .backgrounds__left {
+        padding: 120px 80px 30px 100px;
+    }
+
+    .backgrounds__right {
+        padding: 100px 80px 0 100px;
+    }
+}
+
+@media (max-width: 865px) {
+    .backgrounds {
+        display: none;
+    }
+}

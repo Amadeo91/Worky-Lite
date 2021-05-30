@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.wrapper {
+    position: relative;
+    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
