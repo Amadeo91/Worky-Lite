@@ -148,7 +148,7 @@
     right: 0;
     width: 50%;
     height: 100%;
-    background-image: url(/img/four.jpg);
+    background-image: url(../../img/four.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
