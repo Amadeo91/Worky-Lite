@@ -2,22 +2,38 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 50px;
-    width: 80px;
-    height: 40px;
-    border: 2px solid white;
+    width: 65px;
+    height: 25px;
+    border: 1px solid white;
     border-radius: 20px;
 }
 
 .darkMode__circle {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 35px;
-    height: 36px;
+    left: -18px;
+    transform: translate(50%, -16%);
+    width: 32px;
+    height: 32px;
     border-radius: 70px 50% 50% 70px;
     background-color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.darkMode__circle--slide {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    transform: translate(50%, -16%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50% 70px 70px 50%;
+    background-color: white;
+    cursor: pointer;
+    transition: .5s;
 }
 
 .darkMode__options {
