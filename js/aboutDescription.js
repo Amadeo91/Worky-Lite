@@ -1,16 +1,17 @@
-const descriptionBtn = document.querySelectorAll('.left__descriptionBtn')
-const ulDescriptions = [document.querySelectorAll('.description__containerList')]
+const descriptionBtns = document.querySelectorAll('.left__descriptionBtn');
+const ulDescriptions = document.querySelectorAll('.description__containerList');
 
 
-const showDescriptions = () => {
-    for (let i = 0; i < descriptionBtn.length; i++) {
-        let btn = descriptionBtn[i];
-        btn.addEventListener('click', () => {
-            ulDescriptions.forEach(ulDescription => {
-                const ul = ulDescription[i]
-                ul.classList.toggle('description__containerList--js')
-            });
-        })
-    }
+const btnClick = () => {
+    descriptionBtns.forEach(btn => {
+        btn.addEventListener('click', checkClick);
+    });
 }
-document.addEventListener('DOMContentLoaded', showDescriptions);
+
+const checkClick = (e) => {
+    if (e.target.matches('.left__descriptionBtn')) {
+        e.target.nextElementSibling.classList.toggle('description__containerList--js');
+    } else {}
+}
+
+document.addEventListener('DOMContentLoaded', btnClick)

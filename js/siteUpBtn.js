@@ -8,6 +8,5 @@ const siteUp = () => {
     window.scrollTo(0, 0);
 }
 
-
 window.addEventListener('scroll', showBtn);
 UpBtn.addEventListener('click', siteUp);
