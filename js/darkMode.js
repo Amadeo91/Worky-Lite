@@ -1,8 +1,6 @@
 const slider = document.querySelector('.darkMode__circle');
 const body = document.querySelector('.body');
 const textTags = document.querySelectorAll('h2, p');
-const pricingOptions = document.querySelectorAll('pricing__option');
-
 
 const slide = () => {
     slider.classList.toggle('darkMode__circle--slide');
